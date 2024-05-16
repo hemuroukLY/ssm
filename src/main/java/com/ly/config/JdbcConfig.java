@@ -26,10 +26,4 @@ public class JdbcConfig {
         dataSource.setPassword(password);
         return dataSource;
     }
-    @Bean
-    public PlatformTransactionManager transactionManager(DataSource dataSource){
-        DataSourceTransactionManager ds = new DataSourceTransactionManager();
-        ds.setDataSource(dataSource);
-        return ds;
-    }
 }

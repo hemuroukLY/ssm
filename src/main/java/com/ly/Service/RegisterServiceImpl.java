@@ -12,12 +12,10 @@ public class RegisterServiceImpl implements RegisterService{
     @Autowired
     private dao d;
 
-
     public List<Users> showUsers(String username, String password) {
         List<Users> usersList = d.getUsersList();
         return usersList;
     }
-
     public void register(String username, String password) {
         d.insertUsers(username,password);
     }

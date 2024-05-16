@@ -17,7 +17,6 @@ public class LoginController {
     @Autowired
     private LoginService loginService;
 
-
     @PostMapping("/Login")
     public Integer login(@RequestBody Users user){
         List<Users> usersList=loginService.showUsers();

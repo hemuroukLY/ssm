@@ -16,7 +16,6 @@ public class RegisterController {
     @Autowired
     private RegisterService registerService;
 
-
     @PostMapping("/Register")
     public Integer register(@RequestBody Users user){
         List<Users> usersList=registerService.showUsers(user.getUsername(), user.getPassword());

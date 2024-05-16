@@ -13,11 +13,8 @@ public class LoginServiceImpl implements LoginService{
     @Autowired
     private dao d;
 
-
     public List<Users> showUsers() {
         List<Users> usersList = d.getUsersList();
         return usersList;
     }
-
-
 }
